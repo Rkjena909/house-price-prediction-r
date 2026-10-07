@@ -98,6 +98,16 @@ See the [experiment report](results/REPORT.md) for complete comparisons and the 
 
 ---
 
+## What We Achieved
+
+- Built and executed a reproducible R workflow covering preprocessing, feature engineering, training, evaluation, and prediction.
+- Compared **10 regression models and one weighted ensemble** using shared five-fold cross-validation.
+- Selected the ensemble through cross-validation and measured its performance on **291 independent holdout records**.
+- Generated **1,459 test predictions**, comparison tables, and five visualizations.
+- Measured the effect of engineered features and documented both benefits and limitations.
+
+---
+
 ## Running the Project
 
 Requires R 4.3 or newer. Run these commands from the repository root:
@@ -122,3 +132,11 @@ The project generates model comparison tables, holdout predictions, **1,459 test
 The test dataset has no price labels, so no test accuracy is claimed. Results reflect one holdout split and a limited parameter search.
 
 Future work could examine repeated validation, robust treatment of unusual properties, and alternative ensemble strategies.
+
+---
+
+## Conclusion
+
+The weighted ensemble achieved the lowest cross-validation log-price RMSE of **0.1121**. On the independent holdout, it achieved a log-price RMSE of **0.1392** and a mean absolute error of **$14,634**.
+
+The experiments showed that model rankings depend on the evaluation metric and that adding domain features does not automatically improve generalization. Large errors on unusual properties remain a limitation. The project delivers a reproducible benchmark workflow and documented predictions, with further work needed on robustness and repeated validation.
