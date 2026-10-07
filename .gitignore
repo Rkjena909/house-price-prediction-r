@@ -1,0 +1,7 @@
+.Rhistory
+.RData
+.Rproj.user/
+results/*_model.rds
+results/final_model.rds
+results/cv_folds.rds
+results/*.log
