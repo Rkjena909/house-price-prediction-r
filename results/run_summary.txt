@@ -1,0 +1,9 @@
+Run completed: 2026-10-08 00:36:29.660058
+Mode: full
+CV-selected model: WeightedEnsemble
+Analysis records: 1168
+Holdout records: 291
+Removed analysis outliers: 1
+Successful models: Linear, Ridge, Lasso, ElasticNet, RandomForest, GradientBoosting, SVM, KNN, MARS, XGBoost
+XGBoost installed: TRUE
+Test records are unlabeled: test_predictions.csv has no measured test score.
